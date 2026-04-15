@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gary Ramah — Project Hub</title>
+  <meta name="description" content="Gary Ramah — AI researcher, agentic systems architect, BCI developer, and quantum computing practitioner. Explore projects across agentic AI, quantum computing, brain-computer interfaces, and security." />
+  <meta property="og:title" content="Gary Ramah — Project Hub" />
+  <meta property="og:description" content="Agentic AI • Quantum Computing • Brain-Computer Interfaces • Security" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://garyramah.github.io/" />
+
+  <!-- Fonts -->
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="Gary Ramah">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect x="1" y="1" width="30" height="30" rx="4" stroke="var(--color-primary)" stroke-width="1.5"/>
+          <path d="M8 22 L8 10 L13 10 Q17 10 17 13.5 Q17 16 14.5 17 L18 22" stroke="var(--color-text)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <circle cx="24" cy="16" r="3" stroke="var(--color-primary)" stroke-width="1.5" fill="none"/>
+          <line x1="24" y1="10" x2="24" y2="13" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="24" y1="19" x2="24" y2="22" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-text">Gary Ramah</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#writing" class="nav-link">Writing</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#about" class="nav-link">About</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Switch to light mode">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        </button>
+        <a href="https://github.com/garyramah" target="_blank" rel="noopener" class="btn-outline btn-sm">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for collaboration
+      </div>
+      <h1 class="hero-heading">
+        Building at the<br/>
+        <span class="hero-accent">frontier of intelligence</span>
+      </h1>
+      <p class="hero-sub">
+        Agentic AI architectures · Quantum cryptography · Brain-computer interfaces · Security research.
+        Founder at <a href="https://agentics.inc" target="_blank" rel="noopener" class="inline-link">Agentics.inc</a>.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">Explore Projects</a>
+        <a href="https://www.linkedin.com/in/garyramah" target="_blank" rel="noopener" class="btn-ghost">LinkedIn →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">60+</span>
+          <span class="stat-label">Repositories</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">5</span>
+          <span class="stat-label">Research Domains</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Curiosity</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Repositories</div>
+        <h2 class="section-title">Project Directory</h2>
+        <p class="section-desc">Organized by domain — from agentic orchestration to quantum algorithms to BCI tooling.</p>
+      </div>
+
+      <!-- FILTER TABS -->
+      <div class="filter-tabs" role="tablist" aria-label="Filter projects by category">
+        <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-tab" data-filter="agentic" role="tab" aria-selected="false">Agentic AI</button>
+        <button class="filter-tab" data-filter="quantum" role="tab" aria-selected="false">Quantum</button>
+        <button class="filter-tab" data-filter="bci" role="tab" aria-selected="false">BCI / Neuro</button>
+        <button class="filter-tab" data-filter="security" role="tab" aria-selected="false">Security</button>
+        <button class="filter-tab" data-filter="llm" role="tab" aria-selected="false">LLM / ML</button>
+        <button class="filter-tab" data-filter="tools" role="tab" aria-selected="false">Tools</button>
+      </div>
+
+      <!-- PROJECT GRID -->
+      <div class="project-grid" id="project-grid">
+
+        <!-- AGENTIC AI -->
+        <article class="project-card" data-category="agentic">
+          <div class="card-header">
+            <div class="card-icon agentic">⬡</div>
+            <span class="card-tag">Agentic AI</span>
+          </div>
+          <h3 class="card-title">Agent Name Service</h3>
+          <p class="card-desc">ANS Protocol from OWASP GenAI Security Project — foundational framework for secure AI agent discovery and interaction.</p>
+          <a href="https://github.com/garyramah/Agent-Name-Service" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="agentic">
+          <div class="card-header">
+            <div class="card-icon agentic">⬡</div>
+            <span class="card-tag">Agentic AI</span>
+          </div>
+          <h3 class="card-title">agents-towards-production</h3>
+          <p class="card-desc">End-to-end code-first tutorials covering every layer of production-grade GenAI agents — from spark to scale with reusable blueprints.</p>
+          <a href="https://github.com/garyramah/agents-towards-production" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="agentic">
+          <div class="card-header">
+            <div class="card-icon agentic">⬡</div>
+            <span class="card-tag">Agentic AI</span>
+          </div>
+          <h3 class="card-title">ANS Registry</h3>
+          <p class="card-desc">Agent Name Service registry implementation based on IETF draft-narajala-ans-00 specification.</p>
+          <a href="https://github.com/garyramah/ans-registry" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="agentic">
+          <div class="card-header">
+            <div class="card-icon agentic">⬡</div>
+            <span class="card-tag">Agentic AI</span>
+          </div>
+          <h3 class="card-title">Claude-Flow v2</h3>
+          <p class="card-desc">Enterprise-grade AI development orchestration with advanced swarm intelligence and seamless Claude Code integration.</p>
+          <a href="https://github.com/garyramah/claude-flow" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="agentic">
+          <div class="card-header">
+            <div class="card-icon agentic">⬡</div>
+            <span class="card-tag">Agentic AI</span>
+          </div>
+          <h3 class="card-title">AgentSkills</h3>
+          <p class="card-desc">Specification and documentation standard for agent skills — defining capabilities, interfaces, and composability patterns.</p>
+          <a href="https://github.com/garyramah/agentskills" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="agentic">
+          <div class="card-header">
+            <div class="card-icon agentic">⬡</div>
+            <span class="card-tag">Agentic AI</span>
+          </div>
+          <h3 class="card-title">CommonGround</h3>
+          <p class="card-desc">Open-source application for building, observing, and collaborating with teams of AI agents in shared environments.</p>
+          <a href="https://github.com/garyramah/CommonGround" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="agentic">
+          <div class="card-header">
+            <div class="card-icon agentic">⬡</div>
+            <span class="card-tag">Agentic AI</span>
+          </div>
+          <h3 class="card-title">Eko Workflow Engine</h3>
+          <p class="card-desc">Build production-ready agentic workflows with natural language — keeping operations persistent and reliable.</p>
+          <a href="https://github.com/garyramah/eko" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="agentic">
+          <div class="card-header">
+            <div class="card-icon agentic">⬡</div>
+            <span class="card-tag">Agentic AI</span>
+          </div>
+          <h3 class="card-title">ii-agent</h3>
+          <p class="card-desc">Open-source framework to build and deploy intelligent agents with composable, extensible architecture.</p>
+          <a href="https://github.com/garyramah/ii-agent" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <!-- QUANTUM -->
+        <article class="project-card" data-category="quantum">
+          <div class="card-header">
+            <div class="card-icon quantum">◈</div>
+            <span class="card-tag">Quantum</span>
+          </div>
+          <h3 class="card-title">QAOA</h3>
+          <p class="card-desc">Flexible Python implementation of the Quantum Approximate Optimization Algorithm — designed for researchers to test new ansätze and classical optimizers.</p>
+          <a href="https://github.com/garyramah/QAOA" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="quantum">
+          <div class="card-header">
+            <div class="card-icon quantum">◈</div>
+            <span class="card-tag">Quantum</span>
+          </div>
+          <h3 class="card-title">QAOAKit</h3>
+          <p class="card-desc">Toolkit for reproducible study, application, and verification of QAOA — standardizing benchmarks across implementations.</p>
+          <a href="https://github.com/garyramah/QAOAKit" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="quantum">
+          <div class="card-header">
+            <div class="card-icon quantum">◈</div>
+            <span class="card-tag">Quantum</span>
+          </div>
+          <h3 class="card-title">Quantum-AGI</h3>
+          <p class="card-desc">Exploratory research at the intersection of quantum computing and artificial general intelligence architectures.</p>
+          <a href="https://github.com/garyramah/quantum-agi" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="quantum">
+          <div class="card-header">
+            <div class="card-icon quantum">◈</div>
+            <span class="card-tag">Quantum</span>
+          </div>
+          <h3 class="card-title">Amazon Braket Examples</h3>
+          <p class="card-desc">Notebooks demonstrating quantum computing applications with Amazon Braket — circuits, algorithms, and hybrid classical-quantum workflows.</p>
+          <a href="https://github.com/garyramah/amazon-braket-examples" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="quantum">
+          <div class="card-header">
+            <div class="card-icon quantum">◈</div>
+            <span class="card-tag">Quantum</span>
+          </div>
+          <h3 class="card-title">Linear Algebra for Quantum</h3>
+          <p class="card-desc">Course material with Jupyter notebooks covering linear algebra and mathematical prerequisites for quantum computing.</p>
+          <a href="https://github.com/garyramah/linear_algebra_for_quantum_computing" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="quantum">
+          <div class="card-header">
+            <div class="card-icon quantum">◈</div>
+            <span class="card-tag">Quantum</span>
+          </div>
+          <h3 class="card-title">QuDAG Protocol</h3>
+          <p class="card-desc">Quantum-resistant DAG-based anonymous communication system — TDD implementation of the QuDAG protocol with Claude Code.</p>
+          <a href="https://github.com/garyramah/QuDAG" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="quantum">
+          <div class="card-header">
+            <div class="card-icon quantum">◈</div>
+            <span class="card-tag">Quantum</span>
+          </div>
+          <h3 class="card-title">Cryptos</h3>
+          <p class="card-desc">Pure Python, zero-dependency, from-scratch Bitcoin implementation for educational cryptographic study.</p>
+          <a href="https://github.com/garyramah/cryptos" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <!-- BCI / NEURO -->
+        <article class="project-card" data-category="bci">
+          <div class="card-header">
+            <div class="card-icon bci">⊛</div>
+            <span class="card-tag">BCI / Neuro</span>
+          </div>
+          <h3 class="card-title">MUSE-EEG</h3>
+          <p class="card-desc">Tooling for the Muse EEG headband — signal processing, artifact removal, and brainwave feature extraction for BCI applications.</p>
+          <a href="https://github.com/garyramah/MUSE-EEG" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="bci">
+          <div class="card-header">
+            <div class="card-icon bci">⊛</div>
+            <span class="card-tag">BCI / Neuro</span>
+          </div>
+          <h3 class="card-title">TRIBE v2</h3>
+          <p class="card-desc">Multimodal model for brain response prediction — training and evaluation code for neural decoding at scale.</p>
+          <a href="https://github.com/garyramah/tribev2" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="bci">
+          <div class="card-header">
+            <div class="card-icon bci">⊛</div>
+            <span class="card-tag">BCI / Neuro</span>
+          </div>
+          <h3 class="card-title">CoT-Lab Demo</h3>
+          <p class="card-desc">Sync thinking with AI reasoning models for deeper cognitive alignment — follow, learn, and iterate within one turn.</p>
+          <a href="https://github.com/garyramah/CoT-Lab-Demo" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="bci">
+          <div class="card-header">
+            <div class="card-icon bci">⊛</div>
+            <span class="card-tag">BCI / Neuro</span>
+          </div>
+          <h3 class="card-title">OncOTeam</h3>
+          <p class="card-desc">AI patient advocacy tool for cancer treatment — understand labs, find clinical trials, track treatment. Open source, used in active treatment.</p>
+          <a href="https://github.com/garyramah/oncoteam" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <!-- SECURITY -->
+        <article class="project-card" data-category="security">
+          <div class="card-header">
+            <div class="card-icon security">⬖</div>
+            <span class="card-tag">Security</span>
+          </div>
+          <h3 class="card-title">Superagent</h3>
+          <p class="card-desc">Purpose-trained guardrails that make AI agents secure and compliant — policy enforcement at the agent boundary.</p>
+          <a href="https://github.com/garyramah/superagent" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="security">
+          <div class="card-header">
+            <div class="card-icon security">⬖</div>
+            <span class="card-tag">Security</span>
+          </div>
+          <h3 class="card-title">SecureBERT 2</h3>
+          <p class="card-desc">Security-domain language model — fine-tuned BERT variant for threat classification, vulnerability analysis, and cyber NLP tasks.</p>
+          <a href="https://github.com/garyramah/securebert2" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="security">
+          <div class="card-header">
+            <div class="card-icon security">⬖</div>
+            <span class="card-tag">Security</span>
+          </div>
+          <h3 class="card-title">Auto Reconnaissance</h3>
+          <p class="card-desc">Sample application showcasing Tasks and Entities APIs for automated security reconnaissance workflows.</p>
+          <a href="https://github.com/garyramah/sample-app-auto-reconnaissance" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="security">
+          <div class="card-header">
+            <div class="card-icon security">⬖</div>
+            <span class="card-tag">Security</span>
+          </div>
+          <h3 class="card-title">Frontier Evals</h3>
+          <p class="card-desc">OpenAI Frontier Evaluations — assessment frameworks for model capability and safety at the capability frontier.</p>
+          <a href="https://github.com/garyramah/frontier-evals" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <!-- LLM / ML -->
+        <article class="project-card" data-category="llm">
+          <div class="card-header">
+            <div class="card-icon llm">⬢</div>
+            <span class="card-tag">LLM / ML</span>
+          </div>
+          <h3 class="card-title">LLMs from Scratch</h3>
+          <p class="card-desc">Implement a ChatGPT-like LLM in PyTorch from scratch — step by step, layer by layer, with full conceptual commentary.</p>
+          <a href="https://github.com/garyramah/LLMs-from-scratch" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="llm">
+          <div class="card-header">
+            <div class="card-icon llm">⬢</div>
+            <span class="card-tag">LLM / ML</span>
+          </div>
+          <h3 class="card-title">nanoGPT</h3>
+          <p class="card-desc">The simplest, fastest repository for training and fine-tuning medium-sized GPTs — minimal dependencies, maximum clarity.</p>
+          <a href="https://github.com/garyramah/nanoGPT" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="llm">
+          <div class="card-header">
+            <div class="card-icon llm">⬢</div>
+            <span class="card-tag">LLM / ML</span>
+          </div>
+          <h3 class="card-title">gigaGPT</h3>
+          <p class="card-desc">Minimal codebase for training large language models — stripped to essentials for research and experimentation at scale.</p>
+          <a href="https://github.com/garyramah/gigaGPT" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="llm">
+          <div class="card-header">
+            <div class="card-icon llm">⬢</div>
+            <span class="card-tag">LLM / ML</span>
+          </div>
+          <h3 class="card-title">DALM — Domain Adapted LM</h3>
+          <p class="card-desc">Domain Adapted Language Modeling Toolkit — end-to-end RAG pipeline with retrieval augmentation and domain fine-tuning.</p>
+          <a href="https://github.com/garyramah/DALM" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="llm">
+          <div class="card-header">
+            <div class="card-icon llm">⬢</div>
+            <span class="card-tag">LLM / ML</span>
+          </div>
+          <h3 class="card-title">LEANN</h3>
+          <p class="card-desc">RAG on everything with 97% storage savings — fast, accurate, 100% private RAG on personal devices with LEANN indexing.</p>
+          <a href="https://github.com/garyramah/LEANN" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="llm">
+          <div class="card-header">
+            <div class="card-icon llm">⬢</div>
+            <span class="card-tag">LLM / ML</span>
+          </div>
+          <h3 class="card-title">Parameter Golf</h3>
+          <p class="card-desc">Train the smallest language model that fits in 16MB — competitive efficiency benchmark pushing model compression limits.</p>
+          <a href="https://github.com/garyramah/parameter-golf" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="llm">
+          <div class="card-header">
+            <div class="card-icon llm">⬢</div>
+            <span class="card-tag">LLM / ML</span>
+          </div>
+          <h3 class="card-title">HLE — Humanity's Last Exam</h3>
+          <p class="card-desc">Benchmark evaluating AI models at the absolute frontier of human knowledge across expert-level questions.</p>
+          <a href="https://github.com/garyramah/hle" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="llm">
+          <div class="card-header">
+            <div class="card-icon llm">⬢</div>
+            <span class="card-tag">LLM / ML</span>
+          </div>
+          <h3 class="card-title">THOR — Tensor Representations</h3>
+          <p class="card-desc">Tensors for High-dimensional Object Representations — research into geometric deep learning and tensor decomposition methods.</p>
+          <a href="https://github.com/garyramah/thor" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <!-- TOOLS -->
+        <article class="project-card" data-category="tools">
+          <div class="card-header">
+            <div class="card-icon tools">⬟</div>
+            <span class="card-tag">Tools</span>
+          </div>
+          <h3 class="card-title">Claude-Gemini Bridge</h3>
+          <p class="card-desc">Intelligent integration between Claude Code and Google Gemini for large-scale code analysis across massive codebases.</p>
+          <a href="https://github.com/garyramah/claude-gemini-bridge" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="tools">
+          <div class="card-header">
+            <div class="card-icon tools">⬟</div>
+            <span class="card-tag">Tools</span>
+          </div>
+          <h3 class="card-title">Skill-to-MCP</h3>
+          <p class="card-desc">Convert AI Skills (Claude Skills format) to MCP server resources — part of the BioContextAI ecosystem.</p>
+          <a href="https://github.com/garyramah/skill-to-mcp" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="tools">
+          <div class="card-header">
+            <div class="card-icon tools">⬟</div>
+            <span class="card-tag">Tools</span>
+          </div>
+          <h3 class="card-title">AI-Ready Website Analyzer</h3>
+          <p class="card-desc">Analyze your website's AI-readiness, powered by Firecrawl — structured scoring across discoverability, schema, and agent accessibility.</p>
+          <a href="https://github.com/garyramah/ai-ready-website" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="tools">
+          <div class="card-header">
+            <div class="card-icon tools">⬟</div>
+            <span class="card-tag">Tools</span>
+          </div>
+          <h3 class="card-title">n8n Workflows</h3>
+          <p class="card-desc">Fair-code workflow automation platform with native AI capabilities — 400+ integrations, visual building with custom code, self-hostable.</p>
+          <a href="https://github.com/garyramah/n8n" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="tools">
+          <div class="card-header">
+            <div class="card-icon tools">⬟</div>
+            <span class="card-tag">Tools</span>
+          </div>
+          <h3 class="card-title">ResearchPooler</h3>
+          <p class="card-desc">Automate research publication discovery and analysis — find papers similar to a URL, surface dataset results, re-imagine literature review.</p>
+          <a href="https://github.com/garyramah/researchpooler" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card" data-category="tools">
+          <div class="card-header">
+            <div class="card-icon tools">⬟</div>
+            <span class="card-tag">Tools</span>
+          </div>
+          <h3 class="card-title">Pika Skills</h3>
+          <p class="card-desc">Skills repository for Pika — composable AI capabilities designed for rapid deployment in agentic pipelines.</p>
+          <a href="https://github.com/garyramah/Pika-Skills" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+        </article>
+
+      </div>
+
+      <div class="projects-footer">
+        <a href="https://github.com/garyramah?tab=repositories" target="_blank" rel="noopener" class="btn-outline">View all repositories on GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WRITING / ARTICLES -->
+  <section class="section section-alt" id="writing">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Articles & Research</div>
+        <h2 class="section-title">Writing</h2>
+        <p class="section-desc">Technical articles on agentic AI, security architectures, quantum systems, and emerging technology.</p>
+      </div>
+
+      <div class="writing-grid">
+        <a href="https://www.linkedin.com/in/garyramah/recent-activity/articles/" target="_blank" rel="noopener" class="writing-card featured">
+          <div class="writing-meta">
+            <span class="writing-source">LinkedIn Articles</span>
+            <span class="writing-arrow">↗</span>
+          </div>
+          <h3 class="writing-title">Agentic AI & Multi-Agent Systems</h3>
+          <p class="writing-desc">Deep technical writing on autonomous agent architectures, orchestration patterns, A2A/MCP protocols, and production deployment strategies.</p>
+          <div class="writing-tags">
+            <span class="tag">Agentic AI</span>
+            <span class="tag">Multi-Agent</span>
+            <span class="tag">Architecture</span>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/garyramah/recent-activity/articles/" target="_blank" rel="noopener" class="writing-card">
+          <div class="writing-meta">
+            <span class="writing-source">LinkedIn Articles</span>
+            <span class="writing-arrow">↗</span>
+          </div>
+          <h3 class="writing-title">Quantum Cryptography & QAOA</h3>
+          <p class="writing-desc">Explorations in quantum approximate optimization, post-quantum cryptographic standards, and hybrid classical-quantum algorithm design.</p>
+          <div class="writing-tags">
+            <span class="tag">Quantum</span>
+            <span class="tag">Cryptography</span>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/garyramah/recent-activity/articles/" target="_blank" rel="noopener" class="writing-card">
+          <div class="writing-meta">
+            <span class="writing-source">LinkedIn Articles</span>
+            <span class="writing-arrow">↗</span>
+          </div>
+          <h3 class="writing-title">AI Security & Adversarial Defense</h3>
+          <p class="writing-desc">Security risk analysis for AI agent deployments, adversarial attack countermeasures, and ITAR/NIST compliance frameworks for intelligent systems.</p>
+          <div class="writing-tags">
+            <span class="tag">Security</span>
+            <span class="tag">NIST</span>
+            <span class="tag">ITAR</span>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/garyramah/recent-activity/articles/" target="_blank" rel="noopener" class="writing-card">
+          <div class="writing-meta">
+            <span class="writing-source">LinkedIn Articles</span>
+            <span class="writing-arrow">↗</span>
+          </div>
+          <h3 class="writing-title">Brain-Computer Interfaces</h3>
+          <p class="writing-desc">Hardware integration with AI overlays in neurotechnology, EEG-based biometric verification, and bidirectional BCI methodologies.</p>
+          <div class="writing-tags">
+            <span class="tag">BCI</span>
+            <span class="tag">EEG</span>
+            <span class="tag">Hardware</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK / AGENTICS.INC -->
+  <section class="section" id="work">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Current Work</div>
+        <h2 class="section-title">Agentics.inc</h2>
+        <p class="section-desc">Building the infrastructure layer for autonomous AI — where agents are first-class citizens.</p>
+      </div>
+
+      <div class="work-card">
+        <div class="work-card-left">
+          <div class="work-logo">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-label="Agentics logo">
+              <rect x="2" y="2" width="44" height="44" rx="8" stroke="var(--color-primary)" stroke-width="2"/>
+              <circle cx="24" cy="24" r="8" stroke="var(--color-primary)" stroke-width="2" fill="none"/>
+              <circle cx="24" cy="24" r="3" fill="var(--color-primary)"/>
+              <line x1="24" y1="10" x2="24" y2="16" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"/>
+              <line x1="24" y1="32" x2="24" y2="38" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"/>
+              <line x1="10" y1="24" x2="16" y2="24" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"/>
+              <line x1="32" y1="24" x2="38" y2="24" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="work-info">
+            <h3 class="work-title">Agentics.inc</h3>
+            <p class="work-role">Founder</p>
+          </div>
+        </div>
+        <div class="work-card-right">
+          <p class="work-desc">
+            Agentics.inc focuses on the architecture, security, and deployment of autonomous AI agent ecosystems. 
+            Work spans multi-agent orchestration protocols, agent identity and trust frameworks, 
+            and production-grade agentic infrastructure.
+          </p>
+          <ul class="work-focuses">
+            <li>Multi-agent system orchestration and A2A/MCP protocol development</li>
+            <li>Agent identity, security, and adversarial robustness</li>
+            <li>Agentic ecosystem integration with hardware and neuromorphic devices</li>
+            <li>Regulatory compliance frameworks for autonomous systems</li>
+          </ul>
+          <a href="https://agentics.inc" target="_blank" rel="noopener" class="btn-primary">Visit Agentics.inc →</a>
+        </div>
+      </div>
+
+      <!-- DOMAIN EXPERTISE GRID -->
+      <div class="domains-grid">
+        <div class="domain-card">
+          <div class="domain-icon agentic">⬡</div>
+          <h4 class="domain-name">Agentic AI</h4>
+          <p class="domain-desc">Autonomous multi-agent architectures, swarm intelligence, orchestration patterns, and production deployment.</p>
+        </div>
+        <div class="domain-card">
+          <div class="domain-icon quantum">◈</div>
+          <h4 class="domain-name">Quantum Computing</h4>
+          <p class="domain-desc">QAOA, quantum cryptography, post-quantum security, and hybrid classical-quantum algorithm design.</p>
+        </div>
+        <div class="domain-card">
+          <div class="domain-icon bci">⊛</div>
+          <h4 class="domain-name">Brain-Computer Interfaces</h4>
+          <p class="domain-desc">EEG-based biometric systems, neuromorphic hardware integration, bidirectional neural interfaces.</p>
+        </div>
+        <div class="domain-card">
+          <div class="domain-icon security">⬖</div>
+          <h4 class="domain-name">AI Security</h4>
+          <p class="domain-desc">Adversarial defense, ITAR/NIST compliance, agent identity frameworks, and threat modeling for LLM systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section section-alt" id="about">
+    <div class="container container-narrow">
+      <div class="section-header">
+        <div class="section-label">Background</div>
+        <h2 class="section-title">About</h2>
+      </div>
+      <div class="about-content">
+        <p>
+          I work at the intersection of autonomous AI systems, quantum computation, and advanced human-machine interfaces. 
+          My research spans the full stack — from hardware-level neuromorphic devices to protocol-level agent communication standards.
+        </p>
+        <p>
+          At <a href="https://agentics.inc" target="_blank" rel="noopener" class="inline-link">Agentics.inc</a>, 
+          the focus is on making agentic AI deployable, secure, and trustworthy at enterprise scale. 
+          This means working on agent identity (ANS/MCP protocols), adversarial robustness, and compliance 
+          with ITAR and NIST 800-171r3 frameworks.
+        </p>
+        <p>
+          On the quantum side, my interest is in near-term advantage — QAOA for combinatorial optimization, 
+          quantum-resistant cryptographic protocols, and the convergence of quantum and classical AI.
+        </p>
+        <p>
+          BCI work centers on the Trinity Puck and MW75 Neuro — EEG-enabled biometric verification devices 
+          that use neural signals as authentication primitives, opening up entirely new paradigms for 
+          identity and access management.
+        </p>
+        <div class="about-links">
+          <a href="https://github.com/garyramah" target="_blank" rel="noopener" class="btn-outline">GitHub</a>
+          <a href="https://www.linkedin.com/in/garyramah" target="_blank" rel="noopener" class="btn-outline">LinkedIn</a>
+          <a href="https://agentics.inc" target="_blank" rel="noopener" class="btn-outline">Agentics.inc</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-name">Gary Ramah</span>
+          <span class="footer-tagline">Agentic AI · Quantum · BCI · Security</span>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/garyramah" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+          <a href="https://www.linkedin.com/in/garyramah" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+          <a href="https://agentics.inc" target="_blank" rel="noopener" class="footer-link">Agentics.inc</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2026 Gary Ramah</span>
+        <span class="footer-built">Built with precision.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
