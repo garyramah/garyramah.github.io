@@ -71,6 +71,51 @@
   });
 })();
 
+// === WRITING FILTER ===
+(function () {
+  const wtabs = document.querySelectorAll('[data-wfilter]');
+  const rows = document.querySelectorAll('.article-row');
+  const yearDividers = document.querySelectorAll('.year-divider');
+  if (!wtabs.length || !rows.length) return;
+
+  wtabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const filter = tab.getAttribute('data-wfilter');
+
+      wtabs.forEach(t => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+
+      rows.forEach(row => {
+        const topic = row.getAttribute('data-wtopic');
+        if (filter === 'all' || topic === filter) {
+          row.classList.remove('hidden');
+          row.style.animation = 'fadeIn 0.2s ease forwards';
+        } else {
+          row.classList.add('hidden');
+        }
+      });
+
+      // Show/hide year dividers based on visible articles
+      yearDividers.forEach(divider => {
+        let next = divider.nextElementSibling;
+        let hasVisible = false;
+        while (next && !next.classList.contains('year-divider')) {
+          if (next.classList.contains('article-row') && !next.classList.contains('hidden')) {
+            hasVisible = true;
+            break;
+          }
+          next = next.nextElementSibling;
+        }
+        divider.style.display = hasVisible ? '' : 'none';
+      });
+    });
+  });
+})();
+
 // === SCROLL REVEAL ===
 (function () {
   if (!window.IntersectionObserver) return;
